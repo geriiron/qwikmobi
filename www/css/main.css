@@ -1,0 +1,202 @@
+/*COMMON TAGS*/
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #000;
+}
+article {
+    text-align: left;
+    padding: 150px 0;
+    width: 250px;
+    margin: 0 auto;
+}
+/*COMMON CLASSES*/
+
+/* HEADER */
+header .navbar-default {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    border-bottom: none;
+    background-color: #999;
+    height: auto;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+header .navbar-default .navbar-brand {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    width: 80px;
+    height: 80px;
+    background: url(image/apple_logo.png) center center no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+}
+header .navbar-default ul.nav li {
+    border-left: 1px solid #e7e7e7;
+    background-color: #999;
+    height: 100px;
+}
+header .navbar-default ul.nav li a {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #fff;
+    display: block;
+    height: 100px;
+    line-height: 120px;
+    position: relative;
+    padding: 0 15px;
+    font-size: 36px;
+}
+header .navbar-default ul.nav li:hover {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+}
+header .navbar-default ul.nav li a:hover {
+    color: #999;
+}
+header .navbar-default ul.nav li.active a {
+    border-top: 5px solid #999;
+    background-color: #fff;
+}
+header .navbar-default ul.nav li.active a:hover {
+    background-color: #fff;
+}
+header .navbar-default ul.nav li a.controls {
+    width: 40px;
+}
+header .navbar-default ul.nav li a.controls:hover {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+}
+header .navbar-default ul.nav li a.prev {
+    background: url(image/sprites.png) no-repeat -110px 12px;
+}
+header .navbar-default ul.nav li a.prev:hover {
+    background-position: 5px 12px;
+}
+header .navbar-default ul.nav li a.next {
+    background: url(image/sprites.png) no-repeat -165px 12px;
+}
+header .navbar-default ul.nav li a.next:hover {
+    background-position: -50px 12px;
+}
+ @media only screen and (max-width: 767px), only screen and (max-devide-width: 767px) {
+ header .navbar-toggle {
+ height:100px;
+ width:100px;
+ text-align:center;
+ margin:0;
+ border-radius:0;
+ padding:0;
+ line-height:100px;
+ font-size:2em;
+ color:#fff;
+ border:none;
+ border-left:1px solid #e7e7e7 !important;
+}
+ header .navbar-toggle:hover {
+ color:#666;
+ background-color:#fff !important;
+ border-bottom:1px solid #e7e7e7 !important;
+}
+header .navbar-toggle.active {
+ color:#666;
+ background-color:#fff !important;
+ border:none;
+ border-left:1px solid #ddd;
+ border-top:5px solid #666;
+}
+ header .navbar-default {
+ height:100px;
+ background-color:#999;
+ border-bottom:1px solid #ddd;
+}
+ header .navbar-default.active {
+ background-color:#e7e7e7;
+}
+ header .navbar-default .navbar-brand {
+ left:10px;
+}
+ header .navbar-nav {
+ margin-top:0px;
+}
+ header .navbar-collapse {
+ max-height:inherit;
+ border:none;
+}
+ header .navbar-default ul.nav li {
+ border-left:5px solid #fff;
+ height:auto;
+ background-color:#fff;
+ border-bottom:1px solid #e7e7e7;
+}
+ header .navbar-default ul.nav li:hover {
+ border-left:5px solid #e7e7e7 !important;
+}
+ header .navbar-default ul.nav li a {
+ font-size:24px;
+ color:#999;
+ text-align:left;
+ line-height: 50px;
+ height: 50px;
+}
+ header .navbar-default ul.nav li.active a {
+ border-top:none;
+}
+ header .navbar-default ul.nav li.active {
+ border-left:5px solid #666;
+}
+header .navbar-default ul.nav li:hover {
+ background-color: #fff !important;
+}
+header .navbar-default ul.nav li a:hover {
+ background-color: #fff !important;
+ color:#666;
+}
+ header .navbar-default ul.nav li a.controls {
+ background:none;
+}
+ header .navbar-default ul.nav li a.controls:hover {
+ border:none;
+}
+ header .navbar-default ul.nav li a.prev::after {
+ content:"Previous";
+ font-style:italic;
+}
+ header .navbar-default ul.nav li a.next::after {
+ content:"Next";
+ font-style:italic;
+}
+}
+/*CURTAINs*/
+.curtains {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+.curtains>li {
+    -webkit-transform: translateZ(0);
+    background: white;
+    /* position: fixed;*/
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.curtains>li.hidden {
+    display: none;
+}
+.curtains>li:first-child {
+    z-index: 2;
+}
+.curtains>li {
+    box-shadow: 0 0 20px #999;
+}
+.curtains>li:last-child {
+    box-shadow: none
+}

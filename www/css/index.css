@@ -1,0 +1,23 @@
+.logo figure {
+    padding-top: 50px;
+    text-align: center;
+}
+.wrapper {
+    padding-top: 200px;
+}
+.cta figure img {
+    width: 100%;
+}
+.info header h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.info a {
+    float: right;
+    color: #999;
+    font-size: 24px;
+}
+.info a:hover {
+    color: #000;
+    text-decoration: none;
+}
